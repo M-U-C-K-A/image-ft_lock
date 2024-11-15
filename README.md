@@ -2,29 +2,29 @@
 
 Ce dossier contient les images de sortie du programme. Voici quelques-unes d'entre elles :
 
-1 : Affichage de la premiere image  
+### 1 : Affichage de la premiere image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/1.gif" width="800"><br>
-2 : Affichage de la deuxieme image  
+### 2 : Affichage de la deuxieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/2.gif" width="800"><br>
-3 : Affichage de la troisieme image  
+### 3 : Affichage de la troisieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/3.gif" width="800"><br>
-4 : Affichage de la quatrieme image  
+### 4 : Affichage de la quatrieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/4.gif" width="800"><br>
-5 : Affichage de la cinquieme image  
+### 5 : Affichage de la cinquieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/5.gif" width="800"><br>
-6 : Affichage de la sixieme image  
+### 6 : Affichage de la sixieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/6.gif" width="800"><br>
-7 : Affichage de la septieme image  
+### 7 : Affichage de la septieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/7.gif" width="800"><br>
-8 : Affichage de la huitieme image  
+### 8 : Affichage de la huitieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/8.gif" width="800"><br>
-9 : Affichage de la neuvieme image  
+### 9 : Affichage de la neuvieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/9.gif" width="800"><br>
-10 : Affichage de la dixieme image  
+### 10 : Affichage de la dixieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/10.gif" width="800"><br>
-11 : Affichage de la onzieme image  
+### 11 : Affichage de la onzieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/11.gif" width="800"><br>
-12 : Affichage de la douzieme image  
+### 12 : Affichage de la douzieme image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/12.gif" width="800"><br>
 
 
