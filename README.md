@@ -1,13 +1,75 @@
-# image-ft_lock
-![12](https://github.com/user-attachments/assets/609d948c-1202-44a7-a4bf-0258adbd5f79)
-![11](https://github.com/user-attachments/assets/93fd5c64-dc47-4847-83e5-39f355678dfe)
-![10](https://github.com/user-attachments/assets/f63898ea-7845-4698-b46c-953c8256f0be)
-![9](https://github.com/user-attachments/assets/a4a1ab4a-51b8-4414-a0a7-e4fae67c8cd1)
-![8](https://github.com/user-attachments/assets/46a4256d-27b0-4383-ab24-8f5c07f7e41b)
-![7](https://github.com/user-attachments/assets/685b7d9c-7b4f-4151-b2ed-1a5536d3d51d)
-![6](https://github.com/user-attachments/assets/94e09124-209c-4029-b145-34b4ad9d2029)
-![5](https://github.com/user-attachments/assets/1bb77017-1fe0-4af4-bf21-24a38b6837c5)
-![4](https://github.com/user-attachments/assets/16bfb856-f86b-4e29-8245-fa0548370d80)
-![3](https://github.com/user-attachments/assets/2087c611-9062-45d7-9084-adaea45575b9)
-![2](https://github.com/user-attachments/assets/2c292b24-2c40-437a-a051-876b02c10894)
-![1](https://github.com/user-attachments/assets/f60c09d8-eadf-42ce-add0-566597b3b3e3)
+# Run
+
+Ce dossier contient les images de sortie du programme. Voici quelques-unes d'entre elles :
+
+* 1 : Affichage de la premiere image
+![1](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/1.gif)
+
+* 2 : Affichage de la deuxieme image
+![2](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/2.gif)
+
+* 3 : Affichage de la troisieme image
+![3](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/3.gif)
+
+* 4 : Affichage de la quatrieme image
+![4](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/4.gif)
+
+* 5 : Affichage de la cinquieme image
+![5](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/5.gif)
+
+* 6 : Affichage de la sixieme image
+![6](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/6.gif)
+
+* 7 : Affichage de la septieme image
+![7](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/7.gif)
+
+* 8 : Affichage de la huitieme image
+![8](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/8.gif)
+
+* 9 : Affichage de la neuvieme image
+![9](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/9.gif)
+
+* 10 : Affichage de la dixieme image
+![10](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/10.gif)
+
+* 11 : Affichage de la onzieme image
+![11](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/11.gif)
+
+* 12 : Affichage de la douzieme image
+![12](https://github.com/M-U-C-K-A/image-ft_lock/blob/main/12.gif)
+
+
+```bash
+#!/bin/bash
+# Lancer ft_lock
+ft_lock &
+
+SCRIPT_DIR="$(dirname "$(realpath "$0")")"
+LOCK_DIR="$SCRIPT_DIR/lock"
+export PATH="$PATH:$LOCK_DIR/usr/bin"
+export LD_LIBRARY_PATH="$LOCK_DIR/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH"
+
+FTLOCK_PID=$!
+sleep 0.5
+
+pkill -9 eog
+random_number=$((RANDOM % 12 + 1))
+image_url="https://raw.githubusercontent.com/M-U-C-K-A/image-ft_lock/main/$random_number.gif"
+image_path="$SCRIPT_DIR/lock/image.gif"
+
+wget -O "$image_path" "$image_url" || curl -o "$image_path" "$image_url"
+eog -f "$image_path" &
+
+while true; do
+
+    xdotool key Control_L
+    sleep 6
+    read -r x y < <(xdotool getmouselocation --shell | grep -E 'X=|Y=' | cut -d'=' -f2)
+    if (( x >= 10 || y >= 10 )); then
+        kill $FTLOCK_PID
+
+        rm -f "$image_path"
+        exit 0
+    fi
+done
+```
