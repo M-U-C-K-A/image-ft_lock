@@ -2,6 +2,7 @@
 
 Ce dossier contient les images de sortie du programme. Voici quelques-unes d'entre elles :
 
+
 ### 1 : Affichage de la premiere image  
 <img src="https://github.com/M-U-C-K-A/image-ft_lock/blob/main/1.gif" width="800"><br>
 ### 2 : Affichage de la deuxieme image  
